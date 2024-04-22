@@ -125,6 +125,7 @@ app.post("/api/users/:_id/exercises", async (req, res) => {
     });
 
     res.json({
+      _id: user._id,
       username: user.username,
       description: exercise.description,
       duration: exercise.duration,
